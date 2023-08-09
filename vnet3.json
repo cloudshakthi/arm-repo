@@ -1,0 +1,112 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "westus3"
+        },
+        "extendedLocation": {
+            "value": {}
+        },
+        "virtualNetworkName": {
+            "value": "VNet3"
+        },
+        "tagsByResource": {
+            "value": {
+                "Microsoft.Network/virtualNetworks": {},
+                "Microsoft.Network/ddosProtectionPlans": {},
+                "Microsoft.Network/publicIPAddresses": {},
+                "Microsoft.Network/azureFirewalls": {},
+                "Microsoft.Network/bastionHosts": {},
+                "Microsoft.Network/natGateways": {},
+                "Microsoft.Network/publicIPPrefixes": {},
+                "Microsoft.Network/networkSecurityGroups": {}
+            }
+        },
+        "addressPrefixes": {
+            "value": [
+                "172.20.0.0/16"
+            ]
+        },
+        "natGatewaysWithNewPublicIpAddress": {
+            "value": []
+        },
+        "natGatewaysWithoutNewPublicIpAddress": {
+            "value": []
+        },
+        "natGatewayPublicIpAddressesNewNames": {
+            "value": []
+        },
+        "networkSecurityGroupsNew": {
+            "value": []
+        },
+        "subnets": {
+            "value": [
+                {
+                    "name": "Subnet1",
+                    "properties": {
+                        "addressPrefixes": [
+                            "172.20.1.0/24"
+                        ]
+                    }
+                }
+            ]
+        },
+        "ddosProtectionPlanEnabled": {
+            "value": false
+        },
+        "firewallEnabled": {
+            "value": false
+        },
+        "firewallPolicyIsNew": {},
+        "firewallPolicyId": {},
+        "firewallPublicIpAddressIsNew": {
+            "value": true
+        },
+        "firewallPublicIpAddressName": {
+            "value": "VNet3-firewall-publicIpAddress"
+        },
+        "bastionEnabled": {
+            "value": false
+        },
+        "bastionPublicIpAddressIsNew": {
+            "value": true
+        },
+        "bastionPublicIpAddressName": {
+            "value": "VNet3-bastion-publicIpAddress"
+        },
+        "bastionNsgIsNew": {},
+        "bastionNsgId": {},
+        "encryptionEnabled": {
+            "value": false
+        },
+        "encryptionEnforcement": {
+            "value": "AllowUnencrypted"
+        },
+        "addressSpaceStartingAddressChanged": {
+            "value": true
+        },
+        "addressSpaceAddressSizeChanged": {
+            "value": false
+        },
+        "ipv6Enabled": {
+            "value": false
+        },
+        "defaultSubnetChanged": {
+            "value": true
+        },
+        "subnetsInfo": {
+            "value": [
+                {
+                    "name": "Default",
+                    "natGw": "none",
+                    "nsg": "none",
+                    "udr": "none"
+                }
+            ]
+        },
+        "subnetCount": {
+            "value": 1
+        }
+    }
+}
